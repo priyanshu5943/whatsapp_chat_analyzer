@@ -20,7 +20,7 @@ import zipfile
 
 st.set_page_config(
     page_title="Whatsapp Chat Analyzer",
-    
+    page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed",
     menu_items=None
@@ -92,7 +92,7 @@ if uploaded_file is not None:
     user_list = data['username'].unique().tolist()
     user_list.sort()
     user_list.insert(0,"Overall")
-    st.title('selct a useer')
+    st.title('Select a User')
     selected_user = st.selectbox('select a user',user_list)
 
     if st.button("Show Analysis"):
