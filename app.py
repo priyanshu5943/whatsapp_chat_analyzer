@@ -17,7 +17,7 @@ import zipfile
 
 
 
-st.sidebar.title("Whatsapp Chat Analyzer")
+st.title("Whatsapp Chat Analyzer")
 
 # Side bar
 with st.sidebar:
@@ -34,7 +34,7 @@ with st.sidebar:
 
 ENCODING_DEFAULT = "utf-8"
 # uploaded_file = st.sidebar.file_uploader("Choose a file")
-uploaded_file = st.sidebar.file_uploader(
+uploaded_file = st.file_uploader(
     label="Upload your WhatsApp chat file.",
     type=["txt", "zip"],
     # label_visibility="collapsed",
@@ -86,8 +86,7 @@ if uploaded_file is not None:
     user_list = data['username'].unique().tolist()
     user_list.sort()
     user_list.insert(0,"Overall")
-    st.sidebar.title("Select a User")
-    selected_user = st.sidebar.selectbox('',user_list)
+    selected_user = st.selectbox('select a user',user_list)
 
     if st.sidebar.button("Show Analysis"):
 
