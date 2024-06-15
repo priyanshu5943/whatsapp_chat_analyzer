@@ -17,7 +17,13 @@ import zipfile
 
 
 
-st.title("Whatsapp Chat Analyzer")
+st.set_page_config(
+    page_title="WhatsApp chat parser",
+    page_icon="favicon.png",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+    menu_items=None
+)
 
 # Side bar
 with st.sidebar:
@@ -163,7 +169,7 @@ if uploaded_file is not None:
         fig.update_xaxes(tickangle=-45)
         fig.update_layout(
             width=1800,  # Set the width
-            height=520  # Set the height
+            height=500  # Set the height
         )
         fig.update_xaxes(
             title_font={"size": 20},  # Increase x-axis label font size
