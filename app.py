@@ -88,7 +88,7 @@ if uploaded_file is not None:
     user_list.insert(0,"Overall")
     selected_user = st.selectbox('select a user',user_list)
 
-    if st.sidebar.button("Show Analysis"):
+    if st.button("Show Analysis"):
 
 
 
