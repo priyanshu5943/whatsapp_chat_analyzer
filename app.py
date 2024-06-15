@@ -25,6 +25,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
     menu_items=None
 )
+st.title("Whatsapp Chat Analyzer")
 # Side bar
 with st.sidebar:
     hformat = st.text_input(
@@ -39,6 +40,7 @@ with st.sidebar:
 
 
 ENCODING_DEFAULT = "utf-8"
+st.title("Whatsapp Chat Analyzer")
 # uploaded_file = st.sidebar.file_uploader("Choose a file")
 uploaded_file = st.file_uploader(
     label="Upload your WhatsApp chat file.",
@@ -93,7 +95,7 @@ if uploaded_file is not None:
     user_list.sort()
     user_list.insert(0,"Overall")
     st.title('Select a User')
-    selected_user = st.selectbox('select a user',user_list)
+    selected_user = st.selectbox('',user_list)
 
     if st.button("Show Analysis"):
 
