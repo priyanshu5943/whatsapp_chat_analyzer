@@ -25,7 +25,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
     menu_items=None
 )
-st.title("Whatsapp Chat Analyzer")
 # Side bar
 with st.sidebar:
     hformat = st.text_input(
