@@ -19,7 +19,7 @@ import zipfile
 
 
 st.set_page_config(
-    page_title="Whatsapp Chat Analyzer",
+   
     page_icon="favicon.png",
     layout="centered",
     initial_sidebar_state="collapsed",
