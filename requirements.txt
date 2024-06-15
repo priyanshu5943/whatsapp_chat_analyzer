@@ -1,9 +1,5 @@
-streamlit
+whatstk~=0.6.0
+streamlit-extras~=0.4.0
 urlextract
 wordcloud
-emoji
-whatstk
-streamlit-extras
-matplotlib
-seaborn
-plotly
+
