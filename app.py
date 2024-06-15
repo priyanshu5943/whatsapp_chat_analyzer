@@ -16,9 +16,15 @@ from pathlib import Path
 import zipfile
 
 
-st.title("Whatsapp Chat Analyzer")
 
 
+st.set_page_config(
+    page_title="Whatsapp Chat Analyzer",
+    
+    layout="centered",
+    initial_sidebar_state="collapsed",
+    menu_items=None
+)
 # Side bar
 with st.sidebar:
     hformat = st.text_input(
