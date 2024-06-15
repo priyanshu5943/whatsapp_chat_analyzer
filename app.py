@@ -16,10 +16,10 @@ from pathlib import Path
 import zipfile
 
 
-
+st.title("Whatsapp chat analyzer")
 st.set_page_config(
-    page_title="WhatsApp chat parser",
-    page_icon="favicon.png",
+    page_title="WhatsApp chat analyzer",
+    
     layout="centered",
     initial_sidebar_state="collapsed",
     menu_items=None
@@ -92,6 +92,7 @@ if uploaded_file is not None:
     user_list = data['username'].unique().tolist()
     user_list.sort()
     user_list.insert(0,"Overall")
+    st.title('selct a useer')
     selected_user = st.selectbox('select a user',user_list)
 
     if st.button("Show Analysis"):
