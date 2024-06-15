@@ -18,13 +18,6 @@ import zipfile
 
 st.title("Whatsapp Chat Analyzer")
 
-st.set_page_config(
-   
-    
-    layout="centered",
-    initial_sidebar_state="collapsed",
-    menu_items=None
-)
 
 # Side bar
 with st.sidebar:
