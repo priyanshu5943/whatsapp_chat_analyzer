@@ -16,7 +16,7 @@ from pathlib import Path
 import zipfile
 
 
-
+st.title("Whatsapp chat analyzer")
 
 st.set_page_config(
    
